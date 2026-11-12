@@ -1,0 +1,22 @@
+# Dependency names inferred from imports; original environment versions unavailable.
+# Install the PyTorch build appropriate for your CUDA environment.
+# These constraints retain the legacy Evaluate local metric-script API.
+torch
+transformers<5
+accelerate
+peft
+evaluate<0.5
+datasets<3
+jsonlines
+tqdm
+scikit-learn
+rouge-score
+sacrebleu
+absl-py
+nltk
+numpy
+six
+packaging
+sentencepiece
+protobuf
+# Some original model branches require a compatible flash-attn installation.
