@@ -95,19 +95,7 @@ CMed-Eval 从**显式知识挖掘、隐式知识运用和医学伦理**三个层
 
 所有模型均在 **zero-shot、3-shot 和 5-shot** 设置下进行评测。此外，使用 CMed-Eval 训练集对 Baichuan2-13B-Chat 和 Qwen1.5-14B-Chat 进行 LoRA 监督微调，比较微调前后的表现。
 
-补充材料中的微调与推理设置如下：
 
-| 设置项 | 参数 |
-| --- | --- |
-| 训练设备 | 8 张 H100 GPU |
-| 训练轮数 | 2 |
-| 优化器 | AdamW |
-| 学习率 | 3 × 10⁻⁴ |
-| 批量大小 | 64 |
-| 最大序列长度 | 2,048 tokens |
-| LoRA rank / alpha | 64 / 16 |
-| temperature / top_k / top_p | 0.2 / 40 / 0.9 |
-| repetition_penalty | 1.1 |
 
 ### 评价方法
 
