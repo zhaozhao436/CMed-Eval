@@ -100,10 +100,6 @@ CMed-Eval 从**显式知识挖掘、隐式知识运用和医学伦理**三个层
 | 知识问答、诊疗、文献生成与翻译等生成任务 | BLEU |
 | 医学伦理开放式回答的补充评价 | GPT-4o 模型裁判与人工评价 |
 
-伦理回答的补充评价从**有用性、相关性和事实准确性**三个维度展开。人工评价从四个伦理子数据集中各分层抽取 30 条样本，共 120 条，每条由三名评价者独立评分，采用 10 分制：有用性 4 分、相关性 3 分、事实准确性 3 分。
-
-不同任务使用不同指标，数值不能直接作为统一能力分数进行比较。BLEU 主要衡量与参考文本的词汇重合，不能单独代表诊疗正确性或伦理判断的完整性。
-
 ## 主要发现
 
 1. **模型能力具有明显的任务差异。** 通用模型在任务覆盖与输出稳定性上整体更好，医学领域训练并不必然带来更强的指令遵循或结构化输出能力。
@@ -112,32 +108,4 @@ CMed-Eval 从**显式知识挖掘、隐式知识运用和医学伦理**三个层
 4. **微调收益也包含格式适配能力的改善。** 结构化抽取中的提升不能全部归因于新医学知识的获取；部分任务还存在微调后的局部退化。
 5. **开放式回答需要多维评价。** 伦理任务中的 BLEU 排名与模型裁判、人工评价不完全一致，说明参考文本重合度与回答质量衡量的是不同方面。
 
-上述结论对应论文中的参评模型与实验设置。
 
-## 数据与代码获取
-
-- **研究数据**：根据论文的数据可用性声明，可向通讯作者提出合理申请。
-- **评测代码与模型权重**：当前仓库尚未提供。
-- **问题反馈**：可通过本仓库的 [Issues](https://github.com/zhaozhao436/CMed-Eval/issues) 提交。
-
-数据涉及不同来源的材料，具体获取与使用条件以相应授权及来源条款为准。本仓库已有许可证见 [LICENSE](LICENSE)。
-
-## 引用
-
-如在研究中使用 CMed-Eval，请引用本工作。以下为研究手稿的引用信息：
-
-```bibtex
-@misc{zhao_cmedeval,
-  title  = {{CMed-Eval}: A Systematic Chinese Medical Benchmark for Evaluating Large Language Models},
-  author = {Zhao, Mengchen and Jiang, Shuoran and Yang, Yang and Wu, Xiangping and Liu, Mushi and Guo, Huiyuan and Yang, Fen and Chen, Qingcai},
-  note   = {Research manuscript},
-  url    = {https://github.com/zhaozhao436/CMed-Eval}
-}
-```
-
-## 联系方式
-
-通讯作者：**Qingcai Chen**  
-邮箱：[qingcai.chen@hit.edu.cn](mailto:qingcai.chen@hit.edu.cn)
-
-参与单位：哈尔滨工业大学计算机科学与技术学院、中山大学附属第八医院。
