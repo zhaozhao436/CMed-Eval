@@ -1,6 +1,4 @@
-# CMed-Eval：面向大语言模型的系统性中文医学评测基准
-
-**CMed-Eval: A Systematic Chinese Medical Benchmark for Evaluating Large Language Models**
+# CMed-Eval: A Systematic Chinese Medical Benchmark for Evaluating Large Language Models
 
 CMed-Eval 从**显式知识挖掘、隐式知识运用和医学伦理**三个层次，系统评估大语言模型在中文医学场景中的能力。基准包含 **15 类任务、19 个子数据集和 215,152 条样本**，覆盖医学信息抽取、医学考试、知识问答、疾病诊疗、医学文献处理及伦理决策，并引入覆盖 **121 种罕见病**的诊疗场景。
 
